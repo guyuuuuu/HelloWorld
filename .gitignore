@@ -1,6 +1,6 @@
 # C++
-.exe
-.txt
+*.exe
+*.txt
 
 #vscode
 .vscode/
