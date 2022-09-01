@@ -19,5 +19,4 @@ int main() {
     cout << "*ptr2: " << *ptr2 << endl; //h dereference; first value point to str1
     ++ptr2;
     cout << "ptr2: " << ptr2 << endl; //hello dereference of second element of str1
-
 }
