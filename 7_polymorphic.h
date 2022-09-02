@@ -27,7 +27,7 @@ public:
 
     void haveBirthday() {++age;}
 
-    void talk() const {
+    virtual void talk() const {
         cout << "tweet" << endl;
     }
 };
@@ -72,8 +72,20 @@ public:
     }
 };
 
-int main() {
-    Chicken qiqi("qiqi");
-    qiqi.talk();
-    qiqi.getAge();
-}
+class Eagle : public Bird {
+private:
+    double winglength;
+
+public:
+    Eagle(const string &name_in)
+        :Bird(name_in), winglength(1.2) {
+        cout << "Eagle Ctor" << endl;
+        }
+    
+    void prey() {winglength *= 2;}
+
+    void talk() const {
+        cout << "awwwww" << endl;
+    }
+
+};
